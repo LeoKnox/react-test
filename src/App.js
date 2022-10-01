@@ -22,7 +22,9 @@ function App() {
           <button onClick={addTask}>Add Task</button>
         </div>
         <div className="list">
-          <p>{todoList}</p>
+          {todoList.map ((task) => (
+            <p>{task}</p>
+          ))}
         </div>
       </header>
     </div>
