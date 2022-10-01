@@ -7,7 +7,7 @@ function App() {
 
   const handleChange = (e) => {
     setTask(e.target.value);
-  }
+  };
 
   return (
     <div className="App">
@@ -16,6 +16,9 @@ function App() {
         <div className="input">
           <input onChange={handleChange} />
           <button>Add Task</button>
+        </div>
+        <div className="list">
+          <p>{newTask}</p>
         </div>
       </header>
     </div>
