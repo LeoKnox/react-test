@@ -7,7 +7,7 @@ function App() {
         <h1>Create Something</h1>
         <div className="input">
           <input></input>
-          <button>Add Task<h1>Create</h1></button>
+          <button>Add Task</button>
         </div>
       </header>
     </div>
