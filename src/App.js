@@ -1,4 +1,5 @@
 import './App.css';
+import NewList from './list.js';
 import { useState } from "react";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
             <p>{task}</p>
           ))}
         </div>
+        {NewList}
       </header>
     </div>
   );
