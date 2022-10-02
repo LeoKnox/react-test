@@ -8,6 +8,7 @@ function App() {
   const [todoList, setTodoList] = useState([]);
   const [newTask, setTask] = useState("");
   const [comp, setComp] = useState(false);
+  const [color, setColor] = useState("Red");
 
   const handleChange = (e) => {
     setTask(e.target.value);
@@ -31,7 +32,10 @@ function App() {
         </div>
         <NewList iList={todoList} />
         { comp ? <Red /> : <Blue />}
+        {color}
         <button onClick={changeColor}>Change</button>
+        <button onClick={() => setComp(true)}>Red</button>
+        <button onClick={() => setComp("Blue")}>Blue</button>
       </header>
     </div>
   );
