@@ -32,9 +32,10 @@ function App() {
         </div>
         <NewList iList={todoList} />
         { comp ? <Red /> : <Blue />}
+        {color}
         <button onClick={changeColor}>Change</button>
         <button onClick={() => setComp(true)}>Red</button>
-        <button onClick={() => setComp("Blue")}>Blue</button>
+        <button onClick={() => setColor("<Blue />")}>Blue</button>
       </header>
     </div>
   );
