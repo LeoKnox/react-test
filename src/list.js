@@ -1,7 +1,7 @@
-function NewList(iList) {
+function NewList({iList}) {
     return (
         <>
-        <p>external list {iList.iList}</p>
+        <p>external list {iList}</p>
         </>
     )
 }
