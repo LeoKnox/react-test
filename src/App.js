@@ -7,6 +7,7 @@ import { useState } from "react";
 function App() {
   const [todoList, setTodoList] = useState([]);
   const [newTask, setTask] = useState("");
+  const [comp, setComp] = useState(false);
 
   const handleChange = (e) => {
     setTask(e.target.value);
@@ -25,8 +26,7 @@ function App() {
           <button onClick={addTask}>Add Task</button>
         </div>
         <NewList iList={todoList} />
-        <Red />
-        <Blue />
+        { comp ? <Red /> : <Blue />}
       </header>
     </div>
   );
