@@ -1,5 +1,7 @@
 import './App.css';
 import NewList from './list.js';
+import Red from './red.js';
+import Blue from './blue.js';
 import { useState } from "react";
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
           <button onClick={addTask}>Add Task</button>
         </div>
         <NewList iList={todoList} />
+        <Red />
+        <Blue />
       </header>
     </div>
   );
