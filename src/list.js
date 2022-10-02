@@ -1,7 +1,10 @@
 function NewList({iList}) {
     return (
         <>
-        <p>external list {iList}</p>
+        <p>external list</p>
+        {iList.map ((task) => (
+            <p>:{task}</p>
+        ))}
         </>
     )
 }
