@@ -27,7 +27,7 @@ function App() {
             <p>{task}</p>
           ))}
         </div>
-        <NewList />
+        <NewList iList="red" />
       </header>
     </div>
   );
