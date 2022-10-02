@@ -17,6 +17,10 @@ function App() {
     setTodoList([...todoList, newTask]);
   }
 
+  const changeColor = () => {
+    setComp(!comp);
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -27,6 +31,7 @@ function App() {
         </div>
         <NewList iList={todoList} />
         { comp ? <Red /> : <Blue />}
+        <button onClick={changeColor}>Change</button>
       </header>
     </div>
   );
