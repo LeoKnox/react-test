@@ -13,6 +13,10 @@ function App() {
     setTodoList([...todoList, newTask]);
   }
 
+  const deleteTask = (index) => {
+    console.log(index+"cccc")
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -26,7 +30,7 @@ function App() {
                 <tr>
                     <td>{task}</td>
                     <td>
-                        <button>Delete:{index}</button>
+                        <button onClick={deleteTask(index)}>X</button>
                     </td>
                 </tr>
             ))}
