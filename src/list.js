@@ -6,6 +6,9 @@ function NewList({iList}) {
             {iList.map ((task) => (
                 <tr>
                     <td>{task}</td>
+                    <td>
+                        <button>Delete</button>
+                    </td>
                 </tr>
             ))}
         </table>
