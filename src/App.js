@@ -15,6 +15,9 @@ function App() {
 
   const deleteTask = (index) => {
     console.log(index+"cccc")
+    let newArr = todoList;
+    newArr.slice(index, index+1);
+    console.log(newArr);
   }
 
   return (
