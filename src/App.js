@@ -21,7 +21,7 @@ function App() {
         return true;
       }
     })
-    console.log(newArr);
+    setTodoList(newArr);
   }
 
   return (
