@@ -30,7 +30,7 @@ function App() {
                 <tr>
                     <td>{task}</td>
                     <td>
-                        <button onClick={deleteTask(index)}>X</button>
+                        <button onClick={() => deleteTask(index)}>X</button>
                     </td>
                 </tr>
             ))}
