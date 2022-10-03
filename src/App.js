@@ -14,8 +14,7 @@ function App() {
   }
 
   const deleteTask = (taskName) => {
-    let newArr = todoList;
-    newArr.filter((name) => {
+    const newArr = todoList.filter((name) => {
       if (name === taskName) {
         return false;
       } else {
