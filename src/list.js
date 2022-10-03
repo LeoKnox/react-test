@@ -1,11 +1,14 @@
 function NewList({iList}) {
-    console.log({iList}+"****");
     return (
         <>
         <p>external list</p>
-        {iList.map ((task) => (
-            <p>:{task}</p>
-        ))}
+        <table>
+            {iList.map ((task) => (
+                <tr>
+                    <td>{task}</td>
+                </tr>
+            ))}
+        </table>
         </>
     )
 }
