@@ -7,9 +7,9 @@ export default function Room() {
     <svg width="100" height="100">
     <h1>show rooms here</h1>
     {rooms.map(room => (
-      <div>
+      <div key={room.id}>
       <p>{room.name}</p>
-      <rect width="300" height="100" style={{fill:"red", stroke-width:3}}/>
+      <rect width="300" height="100" style={{fill:"red"}}/>
       </div>
     ))}
     </svg>
