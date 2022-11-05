@@ -4,7 +4,10 @@ export default function Room() {
   ]
   return (
     <>
-    <h1>show rooms here {rooms[0].name}</h1>
+    <h1>show rooms here</h1>
+    {rooms.map(function(room) {
+      <p>{room.name}</p>
+    })}
     </>
   );
 };
