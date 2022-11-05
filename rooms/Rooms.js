@@ -4,10 +4,15 @@ export default function Room() {
   ]
   return (
     <>
+    <svg width="100" height="100">
     <h1>show rooms here</h1>
     {rooms.map(room => (
+      <div>
       <p>{room.name}</p>
+      <rect width="300" height="100" style={{fill:"red", stroke-width:3}}/>
+      </div>
     ))}
+    </svg>
     </>
   );
 };
