@@ -4,8 +4,7 @@ export default function Room() {
   ]
   return (
     <>
-    <svg width="1000" height="1000">
-    <h1>show rooms here</h1>
+    <svg width="100%" height="100%">
     {rooms.map(room => (
       <>
       <p>{room.name}</p>
