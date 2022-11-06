@@ -4,12 +4,12 @@ export default function Room() {
   ]
   return (
     <>
-    <svg width="100" height="100">
+    <svg width="1000" height="1000">
     <h1>show rooms here</h1>
     {rooms.map(room => (
       <>
       <p>{room.name}</p>
-      <rect x={room.width} y={room.width} width={60*room.width} height={60*room.width} fill="red"/>
+      <rect x="100" y="400" width={60*room.width} height={60*room.width} fill="red"/>
       </>
     ))}
     </svg>
