@@ -9,7 +9,8 @@ export default function Room() {
     {rooms.map(room => (
       <>
       <p>{room.name}</p>
-      <rect x={10*room.x} y={10*room.y} width={10*room.width} height={10*room.height} fill="red" style={{border:'2px solid blue'}}/>
+      <rect x={9*room.x} y={9*room.y} width={11*room.width} height={11*room.height} fill="blue"/>
+      <rect x={10*room.x} y={10*room.y} width={10*room.width} height={10*room.height} fill="red"/>
       </>
     ))}
     </svg>
