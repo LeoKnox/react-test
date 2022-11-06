@@ -1,6 +1,6 @@
 export default function Room() {
   const rooms = [
-    {id:1, name: "entry"}
+    {id:1, name: "entry", width: 5}
   ]
   return (
     <>
@@ -9,7 +9,7 @@ export default function Room() {
     {rooms.map(room => (
       <>
       <p>{room.name}</p>
-      <rect y={room.id} width="300" height="100" fill="red"/>
+      <rect x={room.width} y={room.width} width="300" height="100" fill="red"/>
       </>
     ))}
     </svg>
