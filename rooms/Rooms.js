@@ -19,6 +19,20 @@ export default function Room() {
     );
   }
 
+  function Tile(room) {
+      for (let i = 0; i<5; i++) {
+        return(
+        <rect
+          x={10*i}
+          y="10"
+          height = "10"
+          width = "10"
+          fill="blue"
+        />
+        )
+      }
+  }
+
   return (
     <>
     <svg width="10000" height="10000">
@@ -27,6 +41,7 @@ export default function Room() {
       <Box test={room} />
       </>
     ))}
+    <Tile room="0" />
     </svg>
     </>
   );
