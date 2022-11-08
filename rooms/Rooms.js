@@ -7,7 +7,7 @@ export default function Room() {
   function Box(test) {
     console.log(test);
     return(
-      <rect x={10*test.test.x} y="0" width="10" height="10" fill="orange" />
+      <rect x={10*test.test.x} y="0" width="10" height="10" fill="orange" stroke-width="5" stroke="blue" />
     );
   }
 
