@@ -7,7 +7,15 @@ export default function Room() {
   function Box(test) {
     console.log(test);
     return(
-      <rect x={10*test.test.x} y="0" width="10" height="10" fill="orange" stroke-width="5" stroke="blue" />
+      <rect
+        x={20*test.test.x}
+        y={20*test.test.y}
+        width={10*test.test.width}
+        height={10*test.test.height}
+        fill="gray"
+        stroke-width="3"
+        stroke="darkgray"
+      />
     );
   }
 
@@ -16,13 +24,9 @@ export default function Room() {
     <svg width="10000" height="10000">
     {rooms.map(room => (
       <>
-      <p>{room.name}</p>
-      <rect x={9*room.x} y={9*room.y} width={12*room.width} height={12*room.height} fill="blue"/>
-      <rect x={10*room.x} y={10*room.y} width={10*room.width} height={10*room.height} fill="red"/>
+      <Box test={room} />
       </>
     ))}
-    <rect x={10*rooms[0].x} y={10*rooms[0].y} width={10*rooms[0].width} height={10*rooms[0].height} fill="green"/>
-    <Box test={rooms[0]} />
     </svg>
     </>
   );
