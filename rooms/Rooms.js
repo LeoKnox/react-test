@@ -4,10 +4,13 @@ export default function Room() {
     {id:2, name: "second", x:6, y:4, width: 7, height: 4}
   ]
 
-  function Box() {
-    return(<rect x="0" y="0" width="10" height="10" fill="orange" />);
+  function Box(test) {
+    console.log(test);
+    return(
+      <rect x={10*test.test.x} y="0" width="10" height="10" fill="orange" />
+    );
   }
-  
+
   return (
     <>
     <svg width="10000" height="10000">
@@ -19,7 +22,7 @@ export default function Room() {
       </>
     ))}
     <rect x={10*rooms[0].x} y={10*rooms[0].y} width={10*rooms[0].width} height={10*rooms[0].height} fill="green"/>
-    <Box />
+    <Box test={rooms[0]} />
     </svg>
     </>
   );
