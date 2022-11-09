@@ -41,7 +41,6 @@ export default function Room() {
     <svg width="10000" height="10000">
     {rooms.map(room => (
       <>
-      <Box test={room} />
       <Tile room={room} />
       </>
     ))}
