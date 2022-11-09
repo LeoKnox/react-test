@@ -29,7 +29,7 @@ export default function Room() {
     return(
       <polygon
         points = {test}
-        stroke-width = "5"
+        stroke-width = "10"
         stroke="rgb(6,6,6)"
         fill="blue"
       />
