@@ -1,4 +1,5 @@
 export default function Room() {
+  const base = 20;
   const rooms = [
     {id:1, name: "entry", x:2, y:2, width: 6, height: 5},
     {id:2, name: "second", x:12, y:4, width: 7, height: 4}
@@ -21,10 +22,10 @@ export default function Room() {
 
   function Tile(room) {
     let test = `
-      ${10*room.room.x},${10*room.room.y}
-      ${10*room.room.x},${10*room.room.y+10*room.room.height}
-      ${10*room.room.x+10*room.room.width},${10*room.room.y+10*room.room.height}
-      ${10*room.room.x+10*room.room.width},${10*room.room.y}
+      ${base*room.room.x},${base*room.room.y}
+      ${base*room.room.x},${base*room.room.y+base*room.room.height}
+      ${base*room.room.x+base*room.room.width},${base*room.room.y+base*room.room.height}
+      ${base*room.room.x+base*room.room.width},${base*room.room.y}
     `;
     return(
       <polygon
