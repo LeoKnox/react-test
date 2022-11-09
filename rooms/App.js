@@ -1,12 +1,19 @@
-import "./styles.css";
-import Room from "./Rooms.js";
-import Rooms2 from "./Rooms2.js";
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
 
-export default function App() {
-  return (
-    <div className="App">
-      <Rooms2 />
-      <Room />
-    </div>
-  );
+.onex {
+  background: green;
+  max-height: 100px;
+}
+
+.twoy {
+  background: darkgreen;
+  max-height: 200px;
+}
+
+.rotate {
+  background: gray;
+  transform: rotateX(25deg);
 }
