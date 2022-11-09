@@ -5,4 +5,5 @@
 
 .rotate {
   background: gray;
+  transform: rotateX(45deg);
 }
