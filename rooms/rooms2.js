@@ -1,8 +1,8 @@
 export default function Rooms2() {
   return (
-    <>
-    <div>x</div>
-    <div>y</div>
-    </>
+    <div className="rotate">
+    <div className="onex">x</div>
+    <div className="twoy">y</div>
+    </div>
   );
 }
