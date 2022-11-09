@@ -20,7 +20,12 @@ export default function Room() {
   }
 
   function Tile(room) {
-    let test = "1,1 1,40 40,40 40,1";
+    let test = `
+      ${10*room.room.x},${10*room.room.y}
+      ${10*room.room.x},${10*room.room.y+10*room.room.height}
+      ${10*room.room.x+10*room.room.width},${10*room.room.y+10*room.room.height}
+      ${10*room.room.x+10*room.room.width},${10*room.room.y}
+    `;
     return(
       <polygon
         points = {test}
