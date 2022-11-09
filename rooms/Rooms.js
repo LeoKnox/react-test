@@ -40,14 +40,14 @@ export default function Room() {
   }
 
   return (
-    <>
-    <svg width="10000" height="10000">
+    <div className="rotate">
+    <svg width="1000" height="1000">
     {rooms.map(room => (
       <>
       <Tile room={room} />
       </>
     ))}
     </svg>
-    </>
+    </div>
   );
 };
