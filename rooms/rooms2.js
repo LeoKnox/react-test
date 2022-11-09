@@ -1,12 +1,8 @@
-import "./styles.css";
-import Room from "./Rooms.js";
-import Rooms2 from "./Rooms2.js";
-
-export default function App() {
+export default function Rooms2() {
   return (
-    <div className="App">
-      <Rooms2 />
-      <Room />
-    </div>
+    <>
+    <div>x</div>
+    <div>y</div>
+    </>
   );
 }
