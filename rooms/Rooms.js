@@ -20,17 +20,15 @@ export default function Room() {
   }
 
   function Tile(room) {
-      for (let i = 0; i<5; i++) {
-        return(
-        <rect
-          x={10*i}
-          y="10"
-          height = "10"
-          width = "10"
-          fill="blue"
-        />
-        )
-      }
+    return(
+      <rect
+        x={10*room.room.x}
+        y="10"
+        height = "10"
+        width = "10"
+        fill="blue"
+      />
+    )
   }
 
   return (
@@ -39,9 +37,9 @@ export default function Room() {
     {rooms.map(room => (
       <>
       <Box test={room} />
+      <Tile room={room} />
       </>
     ))}
-    <Tile room="0" />
     </svg>
     </>
   );
