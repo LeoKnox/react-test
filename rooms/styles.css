@@ -3,7 +3,18 @@
   text-align: center;
 }
 
+.onex {
+  background: green;
+  max-height: 100px;
+}
+
+.twoy {
+  background: darkgreen;
+  transform: rotateX(90deg);
+  max-height: 200px;
+}
+
 .rotate {
   background: gray;
-  transform: rotateX(45deg);
+  transform: rotateX(25deg);
 }
