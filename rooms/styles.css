@@ -5,6 +5,7 @@
 
 .onex {
   background: green;
+  transform: rotatex(0deg);
   max-height: 100px;
 }
 
