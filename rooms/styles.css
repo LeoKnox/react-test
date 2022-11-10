@@ -16,5 +16,5 @@
 }
 
 .rotate {
-  transform: rotateX(40deg);
+  transform: rotateX(-45deg);
 }
