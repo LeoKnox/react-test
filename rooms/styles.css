@@ -9,12 +9,12 @@
 }
 
 .twoy {
-  background: darkgreen;
-  transform: rotateX(90deg);
+  background: orange;
+  transform: rotateX(-90deg);
   max-height: 200px;
 }
 
 .rotate {
   background: gray;
-  transform: rotateX(0deg);
+  transform: rotateX(180deg);
 }
