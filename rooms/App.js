@@ -1,7 +1,7 @@
 import "./styles.css";
 import Room from "./Rooms.js";
 import Rooms2 from "./Rooms2.js";
-import Rooms3 from "./room3.js";
+import Rooms3 from "./Rooms3.js";
 
 export default function App() {
   const rooms = [
