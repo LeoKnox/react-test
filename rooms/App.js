@@ -1,19 +1,18 @@
-.App {
-  font-family: sans-serif;
-  text-align: center;
-}
+import "./styles.css";
+import Room from "./Rooms.js";
+import Rooms2 from "./Rooms2.js";
+import Rooms3 from "./room3.js";
 
-.onex {
-  background: green;
-  max-height: 100px;
-}
+export default function App() {
+  const rooms = [
+    {id:1, name: "entry", x:2, y:2, width: 6, height: 5},
+    {id:2, name: "second", x:12, y:4, width: 7, height: 4}
+  ]
 
-.twoy {
-  background: darkgreen;
-  max-height: 200px;
-}
-
-.rotate {
-  background: gray;
-  transform: rotateX(25deg);
+  return (
+    <div className="App">
+      <Rooms2 />
+      <Room />
+    </div>
+  );
 }
