@@ -11,8 +11,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <Rooms2 />
-      <Room />
+      <Rooms3 />
     </div>
   );
 }
