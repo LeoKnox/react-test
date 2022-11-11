@@ -7,9 +7,9 @@ export default function Rooms3(rooms) {
       <>
       <p>{room.name}</p>
       <>
-        {for(let i = 0; i < room.length; i++) {
+      {for(let i = 0; i < room.length; i++) {
           <div>
-            <h1>{i}</h1>
+            <p>*</p>
           </div>
         }}
         </>
