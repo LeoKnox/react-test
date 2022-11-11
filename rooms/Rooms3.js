@@ -6,6 +6,13 @@ export default function Rooms3(rooms) {
     {rooms.rooms.map(room => (
       <>
       <p>{room.name}</p>
+      <>
+        {for(let i = 0; i < room.length; i++) {
+          <div>
+            <h1>{i}</h1>
+          </div>
+        }}
+        </>
       </>
     ))}
     </>
