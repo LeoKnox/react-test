@@ -1,9 +1,9 @@
 export default function Rooms3(rooms) {
-  console.log(rooms);
+  console.log(rooms.rooms);
   return(
     <h1>New Rooms</h1>
-    rooms.map(room => (
-      <p>{room.name}</p>
-    ))
+    {rooms.rooms.map(room => (
+      console.log("red" + room.name);
+    ))}
   )
 }
