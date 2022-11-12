@@ -11,5 +11,6 @@ export default function Rooms3(rooms) {
         <p>{i}</p>
       }}
     </>
+    }
   )
 }
