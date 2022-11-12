@@ -1,9 +1,9 @@
 export default function Rooms3(rooms) {
   console.log(rooms.rooms);
 
-  const displayTile = () => {
+  const displayTile = (room) => {
     let td = [];
-    for (let i = 1; i <= 5; i++) {
+    for (let i = 1; i <= room; i++) {
       td.push(<td key={i}>{i}</td>);
     }
     return td;
@@ -13,7 +13,7 @@ export default function Rooms3(rooms) {
     <>
     <h1>New Rooms</h1>
     {rooms.rooms.map(room => (
-      <p>{displayTile()}</p>
+      <p>{displayTile(room=8)}</p>
     ))}
     </>
   )
