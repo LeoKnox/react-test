@@ -3,7 +3,7 @@ export default function Rooms3(rooms) {
 
   const displayTile = () => {
     let td = [];
-    for (let i = 1; i <= a; i++) {
+    for (let i = 1; i <= 5; i++) {
       td.push(<td key={i}>{i}</td>);
     }
     return td;
@@ -14,7 +14,7 @@ export default function Rooms3(rooms) {
     <h1>New Rooms</h1>
     {rooms.rooms.map(room => (
       <p>{displayTile()}</p>
-    )}
+    ))}
     </>
   )
 }
