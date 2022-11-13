@@ -10,13 +10,11 @@ export default function Rooms3(rooms) {
   };
 
   const displayRoom = (room) => {
-    return (
-      <>
-        <tr>
-          {displayTile(room)}
-        </tr>
-      </>
-    )
+    let tr=[];
+    for (let j = 1; j <= room.height; j++) {
+      tr.push(<tr>{displayTile(room)}</tr>)
+    }
+    return tr
   }
 
   return(
