@@ -1,5 +1,7 @@
 export default function Rooms3(rooms) {
   console.log(rooms.rooms);
+  let x = 50;
+  let y = 50;
 
   const displayTile = (room) => {
     let td = [];
@@ -25,9 +27,7 @@ export default function Rooms3(rooms) {
         {displayRoom(room)}
       </table>
     ))}
-    for (let x = 0; x < 8; x++) {
-      <p>{x}</p>
-    }
+    {[...Array(x).map(() => <p>.</p>)]}
     </>
   )
 }
