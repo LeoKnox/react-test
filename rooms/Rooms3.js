@@ -13,7 +13,11 @@ export default function Rooms3(rooms) {
     <>
     <h1>New Rooms</h1>
     {rooms.rooms.map(room => (
-      <p>{displayTile(room)}</p>
+      <table>
+        <tr>
+          {displayTile(room)}
+        </tr>
+      </table>
     ))}
     </>
   )
