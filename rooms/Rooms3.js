@@ -3,7 +3,7 @@ export default function Rooms3(rooms) {
 
   const displayTile = (room) => {
     let td = [];
-    for (let i = 1; i <= room.width; i++) {
+    for (let i = 1; i < room.width; i++) {
       td.push(<td key={i}>{i}</td>);
     }
     return td;
@@ -11,7 +11,7 @@ export default function Rooms3(rooms) {
 
   const displayRoom = (room) => {
     let tr=[];
-    for (let j = 1; j <= room.height; j++) {
+    for (let j = 1; j < room.height; j++) {
       tr.push(<tr>{displayTile(room)}</tr>)
     }
     return tr
@@ -25,6 +25,9 @@ export default function Rooms3(rooms) {
         {displayRoom(room)}
       </table>
     ))}
+    for (let x = 0; x < 8; x++) {
+      <p>{x}</p>
+    }
     </>
   )
 }
