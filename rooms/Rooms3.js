@@ -27,7 +27,11 @@ export default function Rooms3(rooms) {
         {displayRoom(room)}
       </table>
     ))}
-    {[...Array(x).map(xx => (<p>.</p>))]}
+    <>
+    {for(let i=0; i<9; i++) {
+      (<p>i</p>)
+    }}
+    </>
     </>
   )
 }
