@@ -19,6 +19,14 @@ export default function Rooms3(rooms) {
     return tr
   }
 
+  const createMap = () => {
+    let myMap=[];
+    for (let m = 1; m < x; m++) {
+      myMap.push(<p>*</p>)
+    }
+    return myMap;
+  }
+
   return(
     <>
     <h1>New Rooms</h1>
@@ -27,11 +35,7 @@ export default function Rooms3(rooms) {
         {displayRoom(room)}
       </table>
     ))}
-    <>
-    {for(let i=0; i<9; i++) {
-      (<p>i</p>)
-    }}
-    </>
+    {createMap}
     </>
   )
 }
