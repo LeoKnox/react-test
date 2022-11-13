@@ -35,7 +35,7 @@ export default function Rooms3(rooms) {
         {displayRoom(room)}
       </table>
     ))}
-    {createMap}
+    {createMap()}
     </>
   )
 }
