@@ -9,14 +9,22 @@ export default function Rooms3(rooms) {
     return td;
   };
 
+  const displayRoom = (room) => {
+    return (
+      <>
+        <tr>
+          {displayTile(room)}
+        </tr>
+      </>
+    )
+  }
+
   return(
     <>
     <h1>New Rooms</h1>
     {rooms.rooms.map(room => (
       <table>
-        <tr>
-          {displayTile(room)}
-        </tr>
+        {displayRoom(room)}
       </table>
     ))}
     </>
