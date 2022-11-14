@@ -33,6 +33,7 @@ export default function Rooms3(rooms) {
   }
 
   const buttonClick = () => {
+    setGrid(prevState => ({...prevState, board[0,0]: '+'});
     console.log(grid);
   }
 
