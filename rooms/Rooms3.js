@@ -32,7 +32,8 @@ export default function Rooms3(rooms) {
     return myMap;
   }
 
-  const buttonClick = () => {
+  const buttonClick = (e) => {
+    e.preventDefault();
     let newGrid = grid;
     newGrid[0,0] = "+";
     setGrid(newGrid);
