@@ -1,4 +1,7 @@
+import {useState} from "react";
+
 export default function Rooms3(rooms) {
+  const [grid, setGrid] = useState([]);
   console.log(rooms.rooms);
   let x = 50;
   let y = 50;
@@ -22,9 +25,15 @@ export default function Rooms3(rooms) {
   const createMap = () => {
     let myMap=[];
     for (let m = 1; m < x; m++) {
-      myMap.push(<p>*</p>)
+      myMap.push(<p id={m}>*</p>)
     }
     return myMap;
+  }
+
+  const buttonClick = () => {
+    let newArr = [1];
+    grid.push(newArr);
+    console.log(grid);
   }
 
   return(
@@ -35,6 +44,7 @@ export default function Rooms3(rooms) {
         {displayRoom(room)}
       </table>
     ))}
+    <button onClick={buttonClick()}>click</button>
     {createMap()}
     </>
   )
