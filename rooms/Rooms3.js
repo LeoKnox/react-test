@@ -1,7 +1,9 @@
 import {useState} from "react";
 
 export default function Rooms3(rooms) {
-  const [grid, setGrid] = useState([]);
+  const [grid, setGrid] = useState([['*','*','*'],
+  ['*','*','*'],
+  ['*','*','*']]);
   console.log(rooms.rooms);
   let x = 50;
   let y = 50;
@@ -31,8 +33,6 @@ export default function Rooms3(rooms) {
   }
 
   const buttonClick = () => {
-    let newArr = [1];
-    grid.push(newArr);
     console.log(grid);
   }
 
