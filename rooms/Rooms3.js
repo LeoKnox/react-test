@@ -33,11 +33,9 @@ export default function Rooms3(rooms) {
   }
 
   const buttonClick = () => {
-    setGrid((prevState) => {
-      const { board } = prevState;
-      board[0][0] = '+';
-      return { ...prevState, board };
-    });
+    let newGrid = grid;
+    newGrid[0,0] = "+";
+    setGrid(newGrid);
     console.log(grid);
   }
 
