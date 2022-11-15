@@ -35,6 +35,7 @@ export default function Rooms3(rooms) {
   const buttonClick = (e) => {
     e.preventDefault();
     let newGrid = grid;
+    console.log(newGrid[0,0]);
     newGrid[0,0] = "+";
     setGrid(newGrid);
     console.log(grid);
