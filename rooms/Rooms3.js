@@ -49,7 +49,7 @@ export default function Rooms3(rooms) {
         {displayRoom(room)}
       </table>
     ))}
-    <button onClick={buttonClick()}>click</button>
+    <button onClick={buttonClick}>click</button>
     {createMap()}
     </>
   )
