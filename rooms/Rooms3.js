@@ -29,11 +29,17 @@ export default function Rooms3(rooms) {
   }
 
   const createMap = () => {
+    return (
+      grid.map(g => (
+        <p>{g}</p>
+      ))
+    )
+    /*
     let myMap=[];
     for (let m = 1; m < x; m++) {
       myMap.push(<p id={m}>*</p>)
     }
-    return myMap;
+    return myMap;*/
   }
 
   const buttonClick = (e) => {
