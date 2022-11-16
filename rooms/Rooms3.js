@@ -5,12 +5,12 @@ export default function Rooms3(rooms) {
   const [grid, setGrid] = useState([['*','*','*'],
   ['*','*','*'],
   ['*','*','*']]);*/
-  const [grid, setGrid] = useState(
-    Array(4).fill(null).map(()=>Array(4).fill('*'))
-  )
-  console.log(grid);
   let x = 50;
   let y = 50;
+  const [grid, setGrid] = useState(
+    Array(x).fill(null).map(()=>Array(y).fill('*'))
+  )
+  console.log(grid);
 
   const displayTile = (room) => {
     let td = [];
