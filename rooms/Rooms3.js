@@ -30,8 +30,12 @@ export default function Rooms3(rooms) {
 
   const createMap = () => {
     return (
-      grid.map(g => (
-        <p>{g}</p>
+      grid.map(row => (
+        <tr>
+          {row.map(cel => (
+            <td>{cel}</td>
+          ))}
+        </tr>
       ))
     )
     /*
