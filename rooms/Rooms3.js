@@ -1,10 +1,14 @@
 import {useState} from "react";
 
 export default function Rooms3(rooms) {
+  /*
   const [grid, setGrid] = useState([['*','*','*'],
   ['*','*','*'],
-  ['*','*','*']]);
-  console.log(rooms.rooms);
+  ['*','*','*']]);*/
+  const [grid, setGrid] = useState(
+    Array(4).fill(null).map(()=>Array(4).fill('*'))
+  )
+  console.log(grid);
   let x = 50;
   let y = 50;
 
