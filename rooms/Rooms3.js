@@ -11,8 +11,9 @@ export default function Rooms3(rooms) {
     Array(x).fill(null).map(()=>Array(y).fill('*'))
   )
   useEffect (() => {
+    grid[0][0] = 0;
     console.log(grid);
-  }, []);
+  }, [grid]);
 
   const displayTile = (room) => {
     let td = [];
