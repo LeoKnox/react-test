@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {useState, useEffect} from "react";
 
 export default function Rooms3(rooms) {
   /*
@@ -10,7 +10,9 @@ export default function Rooms3(rooms) {
   const [grid, setGrid] = useState(
     Array(x).fill(null).map(()=>Array(y).fill('*'))
   )
-  console.log(grid);
+  useEffect (() => {
+    console.log(grid);
+  }, [grid]);
 
   const displayTile = (room) => {
     let td = [];
