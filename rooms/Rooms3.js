@@ -12,7 +12,7 @@ export default function Rooms3(rooms) {
   )
   useEffect (() => {
     console.log(grid);
-  }, [grid]);
+  }, []);
 
   const displayTile = (room) => {
     let td = [];
