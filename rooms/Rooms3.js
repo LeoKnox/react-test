@@ -52,8 +52,6 @@ export default function Rooms3(rooms) {
     console.log(newGrid[0,0]);
     newGrid[0][0] = "+";
     setGrid(newGrid);
-    console.log(newGrid);
-    return(grid);
   }
 
   return(
