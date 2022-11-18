@@ -15,7 +15,7 @@ export default function Rooms3(rooms) {
   useEffect(() => {
     grid[0][0] = 0;
     console.log(grid);
-  }, [grid]);
+  });
 
   const displayTile = (room) => {
     let td = [];
@@ -50,7 +50,7 @@ export default function Rooms3(rooms) {
   };
 
   const buttonClick = (e) => {
-    //e.preventDefault();
+    e.preventDefault();
     let newGrid = grid;
     newGrid[0][0] += 1;
     setGrid(newGrid);
@@ -66,7 +66,9 @@ export default function Rooms3(rooms) {
       <button onClick={buttonClick}>click</button>
       {createMap()}
       {grid.map(g => (
-        <p>g</p>
+        g.map(h => (
+          <p>{h}</p>
+        ))
       ))}
     </>
   );
