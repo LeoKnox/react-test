@@ -50,7 +50,7 @@ export default function Rooms3(rooms) {
   };
 
   const buttonClick = (e) => {
-    e.preventDefault();
+    //e.preventDefault();
     let newGrid = grid;
     newGrid[0][0] += 1;
     setGrid(newGrid);
@@ -65,8 +65,8 @@ export default function Rooms3(rooms) {
       ))}
       <button onClick={buttonClick}>click</button>
       {createMap()}
-      {grid.map((g) => (
-        <p>{g}</p>
+      {grid.map(g => (
+        <p>g</p>
       ))}
     </>
   );
