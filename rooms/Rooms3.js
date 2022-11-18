@@ -66,9 +66,9 @@ export default function Rooms3(rooms) {
     ))}
     <button onClick={buttonClick}>click</button>
     {createMap()}
-    </>
-    grid.map(g => {
+    {grid.map((g) => (
       <p>{g}</p>
-    })
+    ))}
+    </>
   )
 }
