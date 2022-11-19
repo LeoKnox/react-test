@@ -54,7 +54,7 @@ export default function Rooms3(rooms) {
     let newGrid = grid;
     newGrid[0][0] += 1;
     setGrid(newGrid);
-    console.log("3");
+    console.log(grid+"t");
   };
 
   return (
