@@ -33,7 +33,13 @@ export default function Rooms3(rooms) {
     return tr;
   };
 
-  const createMap = () => {
+  const createMap = (param=0) => {
+    if (param > 0) {
+      let newGrid=grid;
+      newGrid[1][1] = "H";
+      setGrid(newGrid);
+    }
+    console.log(grid);
     return grid.map((row) => (
       <tr>
         {row.map((cel) => (
@@ -50,9 +56,6 @@ export default function Rooms3(rooms) {
   };
 
   const buttonClick = (e) => {
-    let result = "99";
-    setGrid(prevGrid => ([...prevGrid, ...result]));
-    console.log("++"+grid);
     let newGrid = grid;
     newGrid[0][0] += 1;
     setGrid(newGrid);
@@ -67,6 +70,7 @@ export default function Rooms3(rooms) {
         <table>{displayRoom(room)}</table>
       ))}
       <button onClick={buttonClick}>click</button>
+      <button onClick={createMap}>clock</button>
       {createMap()}
       {grid.map(g => (
         g.map(h => (
