@@ -9,13 +9,13 @@ export default function App() {
 
   function changeRed() {
     let x = red;
-    x[1] = 3;
+    x[1] += 1;
     setRed(x);
     console.log(red);
   }
   return (
     <div className="App">
-      <button onClick={changeRed}>click</button>
+      <button onClick={()=> setRed([2,3])}>click</button>
       {red.map(g => (
         <p>{g}</p>
       ))}
