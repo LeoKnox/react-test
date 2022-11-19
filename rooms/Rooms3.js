@@ -15,7 +15,7 @@ export default function Rooms3(rooms) {
   useEffect(() => {
     grid[0][0] = 0;
     console.log(grid);
-  });
+  },[grid]);
 
   const displayTile = (room) => {
     let td = [];
@@ -51,9 +51,11 @@ export default function Rooms3(rooms) {
 
   const buttonClick = (e) => {
     e.preventDefault();
-    let newGrid = grid;
+    let result = "99";
+    setGrid(prevGrid => ([...prevGrid, ...result]));
+    /*let newGrid = grid;
     newGrid[0][0] += 1;
-    setGrid(newGrid);
+    setGrid(newGrid);*/
     console.log(grid+"t");
   };
 
