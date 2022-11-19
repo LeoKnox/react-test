@@ -50,9 +50,9 @@ export default function Rooms3(rooms) {
   };
 
   const buttonClick = (e) => {
-    e.preventDefault();
     let result = "99";
-    //setGrid(prevGrid => ([...prevGrid, ...result]));
+    setGrid(prevGrid => ([...prevGrid, ...result]));
+    console.log("++"+grid);
     let newGrid = grid;
     newGrid[0][0] += 1;
     setGrid(newGrid);
