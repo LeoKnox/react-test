@@ -1,24 +1,36 @@
-import "./styles.css";
-import {useState, useEffect} from 'react';
+import './App.css';
+import {useEffect, useState} from 'react';
 
-export default function App() {
-  const [red, setRed] = useState([]);
+function App() {
+  const [a, setA] = useState(() => {
+    const initialState = [1,2];
+    return initialState;
+  });
+  const data = [1,2];
+
   useEffect(() => {
-    setRed([1,2]);
-  }, [red]);
-
-  function changeRed() {
-    let x = red;
-    x[1] += 1;
-    setRed(x);
-    console.log(red);
+    setA(data);
+  },[a]);
+  
+  function clickButton() {
+    console.log("dddd");
+    let newA = a;
+    newA[1] = 5;
+    setA(newA);
+    console.log("***"+a);
   }
+
   return (
     <div className="App">
-      <button onClick={()=> setRed([2,3])}>click</button>
-      {red.map(g => (
-        <p>{g}</p>
-      ))}
+      <header className="App-header">
+        <h1>Heading</h1>
+        <button onClick={clickButton}>click</button>
+        {a.map((letter) => (
+          <p>{letter}</p>
+        ))}
+      </header>
     </div>
   );
 }
+
+export default App;
