@@ -15,6 +15,7 @@ function App() {
     let newA = a;
     newA[1] = 5;
     setA(newA);
+    return(a);
     console.log("***"+a);
   }
 
